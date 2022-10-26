@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The World From Space</title>
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="loading">
+            <div id="loading-container">
+                <h1>LOADING</h1>
+            </div>
+        </div>
+        <div id="overlay">
+            <div id="left" class="item">
+                <h5 class="info-text" id="object-type">SATELLITES</h5>
+                <input type="text" id="satSearchBox" placeholder="Search for satellites...">
+
+                <ul id="searchList">
+                </ul>
+            </div>
+            <div id="middle"class="item"></div>
+            <div id="right"class="item">
+                <div id="info">
+                    <div class="info sat-info">
+                        <h5 class="info-text">SATELLITE</h5>
+                        <h1 class="info-text" id="object-name">VANGUARD 1</h1>
+                    </div>
+
+                    <div class="info sat-info">
+                        <h1 class="info-text">VELOCITY</h1>
+                        <h3 class="info-text" id="object-velocity">10 M/S</h3>
+                    </div>
+
+                    <div class="info sat-info">
+                        <h1 class="info-text">PERIOD</h1>
+                        <h3 class="info-text" id="object-period">100.2 MIN</h3>
+                    </div>
+                </div>
+
+                <div id="intro">
+                    <h1>Cick on a satellite</h1>
+                    <h1>to view its orbit and</h1>
+                    <h1>information about it</h1>
+                </div>
+            </div>
+
+            <span id="sat-tooltip">
+                <h1 id="tooltip-name"></h5>
+            </span>
+
+        </div>
+
+        <script src="./resources/three.min.js"></script>
+        <script src="./resources/GLTFLoader.js"></script>
+        <script src="./resources/BufferGeometryUtils.js"></script>
+        <script src="./resources/OrbitControls.js"></script>
+        <script src="./resources/satellite.min.js"></script>
+        <script src="./SatelliteInstance.js"></script>
+        <script src="./SatelliteClickManager.js"></script>
+        <script src="./SatelliteManager.js"></script>
+        <script src="./SearchManager.js"></script>
+        <script src="./World.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>

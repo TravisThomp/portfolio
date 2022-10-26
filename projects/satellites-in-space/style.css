@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -9999;
+    opacity: 0;
+    transition: 1s opacity;
+}
+
+#loading {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    transition: 1s opacity;
+}
+
+#loading-container {
+    flex: 1;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    line-height: 1em;
+    font-size: 2.5vw;
+}
+
+#overlay {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    opacity: 0;
+    transition: 1s opacity;
+}
+
+#intro h1{
+    padding-top: .5em;
+
+}
+
+.item {
+    color: #ffffff;
+    text-align: center;
+    line-height: 1em;
+    font-size: 2vw;
+    margin: 0px 2.5vw;
+}
+
+#middle {
+    flex: 1;
+    height: 100vh;
+    border: none;
+}
+
+#overlay h1 {
+    line-height: 0;
+    font-size: 2.5vw;
+}
+
+#overlay h3{
+    color: #aba9a8;
+    font-size: 1.6VW;
+}
+
+#overlay h5 {
+    color: #454ADE;
+    line-height: 0;
+    text-align: left;
+    font-size: 1.2vw;
+}
+
+.info {
+    margin: 7vw 0px;
+}
+
+#left input {
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    margin: 0px;
+    width: 20vw;
+    height: 2vw;
+    font-size: 2vw;
+    padding-bottom: .5vw;
+    border-bottom: 1px solid #aba9a8;
+    text-transform: uppercase;
+}
+
+#left h5 {
+    margin-bottom: 1vw;
+}
+
+#searchList{
+    margin: 5px;
+    color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    height: 50vh;
+    overflow: auto;
+}
+
+#searchList li {
+    list-style-type: none;
+    font-size: 1vw;
+}
+
+a:link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+*:focus {
+    outline: 0;
+}
+
+*::selection {
+    background: transparent;
+}
+
+li:hover {
+    color: #454ADE;
+    cursor: pointer;
+}
+
+.search-inactive {
+    display: none;
+}
+
+.search-selected {
+    color: #454ADE;
+}
+
+ul {
+    scrollbar-width: thin;
+    scrollbar-color: white rgba(0, 0, 0, 0);
+}
+
+#sat-tooltip {
+    color: #454ADE;
+    background-color: black;
+    position:relative;
+    display: none;
+    text-decoration: underline;
+}
+
+#sat-tooltip h1{
+    font-size: 20px;
+}
+
+#overlay:hover #sat-tooltip {
+    display:block;
+    position:fixed;
+    overflow:hidden;
+}
