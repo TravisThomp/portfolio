@@ -1,0 +1,315 @@
+html,
+body,
+#root {
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+    background-color: #F0F4EF;
+    font-family: 'Arsenal', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    html,
+    body,
+    #root {
+        font-size: 3px;
+    }
+}
+
+#app
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+}
+
+#content
+{
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Play*/
+.play-container
+{
+    display: flex;
+    margin: auto;
+    border-radius: 1em;
+    width: 50%;
+    align-items: center;
+}
+
+.play-timestamp
+{
+    color: #ECB16D;
+}
+
+.play-button
+{
+    border-radius: 1em;
+    text-align: center;
+    width: 2em;
+    height: 2em;
+}
+
+.play-bar
+{
+    width: 100%;
+    -webkit-appearance: none;
+    background-color: #F0F4EF;
+    margin: 1em;
+}
+
+.play-bar::-webkit-slider-runnable-track
+{
+    background-color: #EBCCA9;
+}
+.play-bar::-moz-range-track
+{
+    background-color: #EBCCA9;
+}
+
+/*Typography*/
+h1
+{
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    margin: 0px;
+}
+
+h4
+{
+    font-size: 1em;
+    margin: .4em;
+}
+
+.button
+{
+    font-size: 1em;
+    border: none;
+    background-color: #EBCCA9;
+    color: #FFFFFF;
+    font-family: 'Arsenal', sans-serif;
+}
+
+.button:hover
+{
+    background-color: #D4B898;
+}
+
+/* Climb Panel */
+.climb-panel
+{
+    width: 50%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+/* Climber Panel */
+
+.climber-panel-container
+{
+    height: 60%;
+    width: 40%;
+    padding: 1rem;
+}
+
+.climber-panel
+{
+    text-align: center;
+    background-color: #ECB16D;
+    border-radius: 3em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.climber-name-display
+{
+    margin-top: 2.5rem;
+    text-transform: capitalize;
+}
+
+.avatar-container
+{
+    margin: auto;
+    padding: 1em;
+    width: 10vw;
+    height: 10vw;
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+.avatar
+{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.change-climber-button-container
+{
+    margin-bottom: 3rem;
+    padding: 0;
+}
+
+.change-climber-button
+{
+    font-size: 1rem;
+    
+    width: 90%;
+    
+    padding: 1em;
+    border-radius: 1em;
+}
+
+/* Route */
+
+.route-container
+{
+    margin: 1em;
+    padding: 1em;
+    background-color: #FFFFFF;
+    height: 90%;
+    width: 80%;
+    border-radius: 56px;
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 16%));
+
+}
+
+.route
+{
+    height: 100%;
+    width: 100%;
+}    
+
+/* Climber Select */
+
+.climber-select
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.climber-card-container
+{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+}
+
+.climber-card
+{
+    margin: .5em;
+    padding: .3em;
+    border-radius: 1em;
+    text-transform: capitalize;
+}
+
+.climber-icon
+{
+    width: 90%;
+    border-radius: 1em;
+}
+
+/* Info Button */
+.info-button-container
+{
+    margin: 10px;
+    width: 1.5vw;
+    height: 1.5vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    min-width: 30px;
+    min-height: 30px;
+
+}
+
+.info-button
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin: 0;
+    background-color: #ECB16D;
+    border: none;
+    font-size: 100%;
+}
+
+.info-button:hover
+{
+    background-color: #D49F62;
+}
+
+/* Info Pane*/
+.info-popup
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    z-index: 100;
+    background-color: #ECB16D;
+    border-radius: 56px;
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 25%));
+    color: white;
+    word-wrap: break-word;
+    margin: auto;
+    min-height: 200px;
+    text-align: center;
+}
+
+.info-popup button
+{
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.info-how-to
+{
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+    align-items: center;
+}
+
+.right-foot
+{
+    color: purple;
+}
+
+.left-foot
+{
+    color: orange;
+}
+
+.right-hand
+{
+    color: blue;
+}
+
+.left-hand
+{
+    color: red;
+}
+
+/*# sourceMappingURL=bundle.084e64b9fd781154.css.map*/
