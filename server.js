@@ -9,6 +9,11 @@ router.get('/', (req, res) => {
     res.sendFile(path.join(__projectdir + '/portfolio/portfolio.html'))
 })
 
+
+router.get('/solar-agribot', (req, res) => {
+    res.sendFile(path.join(__projectdir + '/portfolio/portfolio.html'))
+})
+
 router.get('/im-okay', (req, res) => {
     res.sendFile(path.join(__projectdir + '/im-okay/im-okay.html'))
 })
