@@ -10,7 +10,7 @@ const __projectdir = __dirname + "/projects"
 
 let accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags : 'a'})
 
-
+app.enable("trust proxy");
 app.use(morgan('combined', { stream: accessLogStream }))
 app.use(morgan('combined'))
 
