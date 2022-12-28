@@ -1,0 +1,8 @@
+::ffff:127.0.0.1 - - [28/Dec/2022:00:55:51 +0000] "GET /solar-agribot HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0"
+::ffff:127.0.0.1 - - [28/Dec/2022:00:55:51 +0000] "GET /bundle.d7a46c9837abeae0.js HTTP/1.1" 304 - "http://localhost:3001/solar-agribot" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0"
+::ffff:127.0.0.1 - - [28/Dec/2022:00:55:51 +0000] "GET /solar-agribot/robot-mechanical.png HTTP/1.1" 304 - "http://localhost:3001/solar-agribot" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0"
+::ffff:127.0.0.1 - - [28/Dec/2022:00:55:51 +0000] "GET /solar-agribot/website-design.png HTTP/1.1" 304 - "http://localhost:3001/solar-agribot" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0"
+::ffff:127.0.0.1 - - [28/Dec/2022:00:55:51 +0000] "GET /solar-agribot/website-current.png HTTP/1.1" 304 - "http://localhost:3001/solar-agribot" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0"
+::ffff:127.0.0.1 - - [28/Dec/2022:00:55:51 +0000] "GET /solar-agribot/communications-diagram.png HTTP/1.1" 304 - "http://localhost:3001/solar-agribot" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0"
+::ffff:127.0.0.1 - - [28/Dec/2022:00:55:51 +0000] "GET /solar-agribot/electrical-design.png HTTP/1.1" 304 - "http://localhost:3001/solar-agribot" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0"
+::ffff:127.0.0.1 - - [28/Dec/2022:00:55:51 +0000] "GET /favicon.ico HTTP/1.1" - - "http://localhost:3001/solar-agribot" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0"

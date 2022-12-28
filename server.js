@@ -1,9 +1,18 @@
 const express = require('express')
 const app = express()
 const path = require('path')
+const fs = require('fs')
 const router = express.Router();
+const morgan = require('morgan')
 const PORT = 3001
 const __projectdir = __dirname + "/projects"
+
+
+let accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags : 'a'})
+
+
+app.use(morgan('combined', { stream: accessLogStream }))
+app.use(morgan('combined'))
 
 router.get('/', (req, res) => {
     res.sendFile(path.join(__projectdir + '/portfolio/portfolio.html'))
