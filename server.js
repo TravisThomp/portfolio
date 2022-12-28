@@ -33,6 +33,10 @@ router.get('/climbing-route-vis', (req, res) => {
     res.sendFile(path.join(__projectdir + '/climbing-route-vis/climbing-route-vis.html'))
 })
 
+router.get('/ban-animations', (req, res) => {
+    res.redirect('https://www.spigotmc.org/resources/ban-animations.36483/')
+})
+
 // router.get('/interactive-climbing-gym-map', (req, res) => {
 //     res.sendFile(path.join(__projectdir + '/interactive-climbing-gym-map/public/index.html'))
 // })
